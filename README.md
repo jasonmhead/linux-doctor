@@ -74,7 +74,7 @@ Terminate Process:
 Check if File is Unlocked:
 Recheck with `lsof`.
 
-### Versioning and Dependancy issues
+### Versioning and Dependency issues
 - for Python use Conda [https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda] 
 or venv (python focused - cannot manage non-Python packages.) [https://docs.python.org/3/library/venv.html]
 - if using apt, always update apt before doing a program install or update `sudo apt update`
