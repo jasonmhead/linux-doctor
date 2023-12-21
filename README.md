@@ -3,6 +3,31 @@ A repo to help with Linux troubles
 
 ![linux-dr](https://github.com/jasonmhead/linux-doctor/assets/6140151/94e5b442-642a-457d-ba55-c27b4aab2594)
 
+---
+## General Problem Solving Philosophy
+There can be many ways to do a thing, so if you keep hitting walls when trying a solution, it could be time to head another direction.
+
+For example, for file sharing / general data transfer:
+- cd to the file dir and serve your file with a Python simple server on port 80 `sudo python3 -m http.server 80`
+  -- port 80 may need opened
+- you could use `wget [file url]` to retrieve a file
+- you could use ssh to securely transfer a file `scp /path/to/local/file username@remote_host:/path/to/remote/directory`
+- (use sftp to transfer files)[https://www.techrepublic.com/article/how-to-set-up-an-sftp-server-on-linux/]
+  -- make sure sftp is running and serve files 
+  -- `sftp username@remote_server`
+  -- download a file `get remote_file_path`
+  -- upload a file: `put local_file_path`
+  -- download a directory: `get -r remote_directory_path`
+  -- upload a directory: `put -r local_directory_path`
+
+So for any given problem, if one takes too long to solve then a work-around could be in order, evaluating complexity of potentual solutions.
+
+---
+
+## Getting in system help
+- use `man your-command` to get the manual
+- try putting --help on the end of your command, the man page should list if there is a help option (or switch)
+
 ## The Kitchen Sink - Cheatsheets and Broadly Focused Resources
 ![linux-kitchen-sink](https://github.com/jasonmhead/linux-doctor/assets/6140151/f5b9873a-7e90-45d7-b96b-3077c60abe15)
 
