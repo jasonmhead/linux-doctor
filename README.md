@@ -5,10 +5,33 @@ A repo to help with Linux troubles
 ## The Kitchen Sink - Cheatsheets and Broadly Focused Resources
 ![linux-kitchen-sink](https://github.com/jasonmhead/linux-doctor/assets/6140151/f5b9873a-7e90-45d7-b96b-3077c60abe15)
 
-- [gto76/linux-cheatsheet](https://github.com/gto76/linux-cheatsheet) Comprehensive Linux Cheatsheet
-- https://github.com/trinib/Linux-Bash-Commands Ultimate list of Linux bash commands, cheatsheet and resources
-- https://github.com/sudheerj/Linux-cheat-sheet List of Linux commands
-- https://github.com/crhuber/linux-cheatsheet Handy commands for Linux
+- Comprehensive Linux Cheatsheet [gto76/linux-cheatsheet](https://github.com/gto76/linux-cheatsheet) 
+- Ultimate list of Linux bash commands, cheatsheet and resources https://github.com/trinib/Linux-Bash-Commands 
+- List of Linux commands https://github.com/sudheerj/Linux-cheat-sheet 
+- Handy commands for Linux https://github.com/crhuber/linux-cheatsheet 
 
 ## More focused problem solving
 ![Linux-scalpel](https://github.com/jasonmhead/linux-doctor/assets/6140151/7388380d-08a5-48cc-8a97-bc3738252a90)
+
+### Permissions - permissions getting in your way? `sudo` is your friend for appending to commands to do everything while maintaining system security, but here is a way to make it easier to not have to type in the password every time.
+#### add your user to the  sudoers file to give your user root permissions - be aware that a user with this level of permissions that is compromised is a extra security risk
+- in the terminal window type `whoami` to get your user name
+- next `sudo visudo` to safely access the sudoers file
+- add `yourusername ALL=(ALL) NOPASSWD: ALL` to the file - replacing yourusername with what you got from `whoami`
+- save the file
+- close the terminal window, open a new one and `sudo ls` to test
+
+### File locked? - here's some help, but becareful what you stop to not loose data or cause an issue
+ locked file in Linux and then freeing it:
+
+Find PID of Locking Process:
+- Use `lsof | grep [filename]` to identify the process and its PID.
+
+Terminate Process:
+- Standard kill: `kill [PID]`
+- If not effective, `force kill: kill -9 [PID]`
+
+Check if File is Unlocked:
+Recheck with `lsof`.
+
+
