@@ -76,7 +76,7 @@ Recheck with `lsof`.
 
 ### Versioning and Dependency issues
 - for Python use Conda [https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda] 
-or venv (python focused - cannot manage non-Python packages.) [https://docs.python.org/3/library/venv.html]
+or venv (python focused - cannot manage non-Python packages) [https://docs.python.org/3/library/venv.html]
 - if using apt, always update apt before doing a program install or update `sudo apt update`
 - some setups may have a Docker container, but that has it's own setup so perhaps best to avoid unless as a last resort
 - alternative to using Docker (Podman)[https://podman.io/]
