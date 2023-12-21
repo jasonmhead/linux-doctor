@@ -8,7 +8,7 @@ A repo to help with Linux troubles
 There can be many ways to do a thing, so if you keep hitting walls when trying a solution, it could be time to head another direction.
 
 For example, for file sharing / general data transfer:
-- cd to the file dir and serve your file with a Python simple server on port 80 `sudo python3 -m http.server 80`
+- cd to the file dir and serve your file with a Python simple server on port 80 `sudo python -m http.server 80`
   -- port 80 may need opened
 - you could use `wget [file url]` to retrieve a file
 - you could use ssh to securely transfer a file `scp /path/to/local/file username@remote_host:/path/to/remote/directory`
