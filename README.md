@@ -28,6 +28,7 @@ So for any given problem, if one takes too long to solve then a work-around coul
 Running Linux on "bare metal" without a inbetween will give you the best resource usage and advantages, but there is a way other than using a VM to run Linux on windows **WSL**
 
 _"WSL (Windows Subsystem for Linux) is a compatibility layer in Windows 10 and later that allows you to run a Linux distribution alongside your Windows operating system.
+
 WSL works by translating Linux system calls into Windows system calls, providing a seamless integration of Linux and Windows functionality for developers and power users."_
 
 [https://learn.microsoft.com/en-us/windows/wsl/install]
