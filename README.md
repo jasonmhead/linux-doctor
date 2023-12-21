@@ -23,6 +23,13 @@ For example, for file sharing / general data transfer:
 So for any given problem, if one takes too long to solve then a work-around could be in order, evaluating complexity of potentual solutions.
 
 ---
+## Linux inside Windows
+Running Linux on "bare metal" without a inbetween will give you the best resource usage and advantages, but there is a way other than using a VM to run Linux on windows **WSL**
+_"WSL (Windows Subsystem for Linux) is a compatibility layer in Windows 10 and later that allows you to run a Linux distribution alongside your Windows operating system.
+WSL works by translating Linux system calls into Windows system calls, providing a seamless integration of Linux and Windows functionality for developers and power users."_
+[https://learn.microsoft.com/en-us/windows/wsl/install]
+[https://ubuntu.com/wsl]
+---
 
 ## Getting in system help
 - use `man your-command` to get the manual
@@ -64,3 +71,5 @@ Recheck with `lsof`.
 - for Python use Conda [https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda] 
 or venv (python focused - cannot manage non-Python packages.) [https://docs.python.org/3/library/venv.html]
 - if using apt, always update apt before doing a program install or update `sudo apt update`
+- some setups may have a Docker container, but that has it's own setup so perhaps best to avoid unless as a last resort
+- alternative to using Docker (Podman)[https://podman.io/]
