@@ -31,8 +31,8 @@ _"WSL (Windows Subsystem for Linux) is a compatibility layer in Windows 10 and l
 
 _WSL works by translating Linux system calls into Windows system calls, providing a seamless integration of Linux and Windows functionality for developers and power users."_
 
-(WSL Docs)[https://learn.microsoft.com/en-us/windows/wsl/install]
-(WSL Ubuntu)[https://ubuntu.com/wsl]
+WSL Docs (https://learn.microsoft.com/en-us/windows/wsl/install)
+WSL Ubuntu (https://ubuntu.com/wsl)
 ---
 
 ## Getting in system help
